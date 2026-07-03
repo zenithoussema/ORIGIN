@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "ORIGIN | Premium Restaurant & Café",
+    "description": "Experience culinary excellence at ORIGIN. Premium dishes crafted with passion and the finest ingredients.",
+    "ogTitle": "ORIGIN - Where Culinary Art Meets Luxury",
+    "ogDescription": "Discover a world of exceptional flavors at ORIGIN. Fine dining, artisanal café, and unforgettable experiences."
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "reservations": "Reservations",
+    "orders": "Orders",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Where Culinary Art Meets Luxury",
+    "subtitle": "Experience exceptional flavors crafted with passion and the finest ingredients from around the world.",
+    "ctaMenu": "Explore Menu",
+    "ctaReservation": "Reserve Table"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Discover our carefully curated selection of dishes",
+    "categories": {
+      "all": "All",
+      "starters": "Starters",
+      "mains": "Main Courses",
+      "desserts": "Desserts",
+      "drinks": "Drinks"
+    },
+    "addToCart": "Add to Cart",
+    "viewDetails": "View Details"
+  },
+  "reservations": {
+    "title": "Reserve Your Table",
+    "subtitle": "Create unforgettable memories with us",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "date": "Date",
+      "time": "Time",
+      "guests": "Number of Guests",
+      "specialRequests": "Special Requests",
+      "submit": "Reserve Now"
+    }
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "A journey of passion, taste, and excellence"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove",
+    "quantity": "Quantity"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search menu, pages, news...",
+    "categories": "Categories",
+    "products": "Products",
+    "pages": "Pages",
+    "news": "News",
+    "noResults": "No results found",
+    "recentSearches": "Recent Searches"
+  },
+  "footer": {
+    "brand": "Premium restaurant and café experience, where culinary art meets luxury.",
+    "quickLinks": "Quick Links",
+    "openingHours": "Opening Hours",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "hours": {
+      "weekdays": "Monday - Friday: 10:00 AM - 10:00 PM",
+      "saturday": "Saturday: 9:00 AM - 11:00 PM",
+      "sunday": "Sunday: 9:00 AM - 9:00 PM"
+    },
+    "social": "Follow Us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "back": "Go Back",
+    "seeAll": "See All",
+    "learnMore": "Learn More"
+  },
+  "language": {
+    "en": "English",
+    "ar": "Arabic",
+    "fr": "French"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "ORIGIN | Restaurant & Café Premium",
+    "description": "Découvrez l'excellence culinaire chez ORIGIN. Plats premium préparés avec passion et les meilleurs ingrédients.",
+    "ogTitle": "ORIGIN - Où l'Art Culinaire Rencontre le Luxe",
+    "ogDescription": "Explorez un monde de saveurs exceptionnelles chez ORIGIN. Restaurant gastronomique, café artisanal et expériences inoubliables."
+  },
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "reservations": "Réservations",
+    "orders": "Commandes",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Où l'Art Culinaire Rencontre le Luxe",
+    "subtitle": "Savourez des saveurs exceptionnelles préparées avec passion et les meilleurs ingrédients du monde entier.",
+    "ctaMenu": "Explorer le Menu",
+    "ctaReservation": "Réserver une Table"
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "subtitle": "Découvrez notre sélection soigneusement établie de plats",
+    "categories": {
+      "all": "Tout",
+      "starters": "Entrées",
+      "mains": "Plats Principaux",
+      "desserts": "Desserts",
+      "drinks": "Boissons"
+    },
+    "addToCart": "Ajouter au Panier",
+    "viewDetails": "Voir les Détails"
+  },
+  "reservations": {
+    "title": "Réservez Votre Table",
+    "subtitle": "Créez des souvenirs inoubliables avec nous",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "guests": "Nombre d'Invités",
+      "specialRequests": "Demandes Spéciales",
+      "submit": "Réserver Maintenant"
+    }
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "subtitle": "Un voyage de passion, de goût et d'excellence"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous serions ravis d'avoir de vos nouvelles",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer le Message"
+    }
+  },
+  "cart": {
+    "title": "Panier",
+    "empty": "Votre panier est vide",
+    "subtotal": "Sous-total",
+    "checkout": "Passer à la Caisse",
+    "remove": "Supprimer",
+    "quantity": "Quantité"
+  },
+  "search": {
+    "title": "Recherche",
+    "placeholder": "Rechercher menu, pages, actualités...",
+    "categories": "Catégories",
+    "products": "Produits",
+    "pages": "Pages",
+    "news": "Actualités",
+    "noResults": "Aucun résultat trouvé",
+    "recentSearches": "Recherches Récentes"
+  },
+  "footer": {
+    "brand": "Expérience restaurant et café premium, où l'art culinaire rencontre le luxe.",
+    "quickLinks": "Liens Rapides",
+    "openingHours": "Horaires d'Ouverture",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "hours": {
+      "weekdays": "Lundi - Vendredi: 10h00 - 22h00",
+      "saturday": "Samedi: 9h00 - 23h00",
+      "sunday": "Dimanche: 9h00 - 21h00"
+    },
+    "social": "Suivez-Nous",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer",
+    "back": "Retour",
+    "seeAll": "Voir Tout",
+    "learnMore": "En Savoir Plus"
+  },
+  "language": {
+    "en": "Anglais",
+    "ar": "Arabe",
+    "fr": "Français"
+  }
+}
