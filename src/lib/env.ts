@@ -19,7 +19,7 @@ const serverEnvSchema = {
   CLOUDINARY_CLOUD_NAME: z.string().optional(),
   CLOUDINARY_API_KEY: z.string().optional(),
   CLOUDINARY_API_SECRET: z.string().optional(),
-  LOG_LEVEL: z.enum(['debug', 'info', 'warn', 'error', 'security', 'audit']).default('info'),
+  LOG_LEVEL: z.enum(['debug', 'info', 'warn', 'error', 'critical', 'security', 'audit']).default('info'),
   RATE_LIMIT_ENABLED: z.enum(['true', 'false']).default('true'),
   PWA_ENABLED: z.enum(['true', 'false']).default('true'),
   ANALYZE: z.enum(['true', 'false']).optional(),

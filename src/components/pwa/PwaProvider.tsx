@@ -1,22 +1,27 @@
 'use client';
 
-import { useEffect, useState, type ReactNode } from 'react';
+import { useSyncExternalStore, type ReactNode } from 'react';
 import { OfflineBanner } from '@/components/pwa/OfflineBanner';
 import { UpdateNotification } from '@/components/pwa/UpdateNotification';
 import { InstallBanner } from '@/components/pwa/InstallBanner';
 
+function useIsClient() {
+  return useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
+}
+
 export function PwaProvider({ children }: { children: ReactNode }) {
-  const [mounted, setMounted] = useState(false);
+  const isClient = useIsClient();
 
-  useEffect(() => {
-    setMounted(true);
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').catch(() => {});
-    }
-  }, []);
-
-  if (!mounted) {
+  if (!isClient) {
     return <>{children}</>;
+  }
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
   }
 
   return (
