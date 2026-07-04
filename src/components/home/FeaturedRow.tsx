@@ -34,6 +34,17 @@ function ItemCard({ item, index }: { item: HomepageMenuItem; index: number }) {
             fill
             sizes="280px"
             className="object-cover transition-transform duration-700 group-hover:scale-110"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const parent = target.parentElement;
+              if (parent) {
+                const fallback = document.createElement('div');
+                fallback.className = 'absolute inset-0 flex items-center justify-center bg-espresso/10 dark:bg-cream/10';
+                fallback.innerHTML = '<span class="text-4xl">☕</span>';
+                parent.appendChild(fallback);
+              }
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 

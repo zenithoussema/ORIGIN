@@ -16,7 +16,6 @@ const MAX_IMAGES_CACHE = 200;
 const PRECACHE_ASSETS = [
   '/',
   '/menu',
-  '/offline',
   '/about',
   '/contact',
   '/reservations',
@@ -225,14 +224,10 @@ async function handleFonts(request) {
 }
 
 async function handleImages(request) {
-  const cachedResponse = await caches.match(request);
-  if (cachedResponse) return cachedResponse;
-
   try {
     const response = await fetch(request);
     if (response.ok) {
       const cache = await caches.open(IMAGES_CACHE);
-      // Limit cache size
       const keys = await cache.keys();
       if (keys.length >= MAX_IMAGES_CACHE) {
         await cache.delete(keys[0]);
@@ -241,9 +236,10 @@ async function handleImages(request) {
     }
     return response;
   } catch {
-    // Return a placeholder for images
+    const cachedResponse = await caches.match(request);
+    if (cachedResponse) return cachedResponse;
     return new Response(
-      '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect fill="#2E1A10" width="200" height="200"/><text fill="#C8882A" font-family="system-ui" font-size="14" text-anchor="middle" x="100" y="105">Offline</text></svg>',
+      '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect fill="#2E1A10" width="200" height="200"/><text fill="#C8882A" font-family="system-ui" font-size="48" text-anchor="middle" x="100" y="110">☕</text></svg>',
       { headers: { 'Content-Type': 'image/svg+xml' } }
     );
   }

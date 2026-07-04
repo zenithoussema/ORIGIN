@@ -1,3 +1,5 @@
+'use client';
+
 import * as Sentry from '@sentry/nextjs';
 
 type LogLevel = 'debug' | 'info' | 'warn' | 'error' | 'critical' | 'security' | 'audit';

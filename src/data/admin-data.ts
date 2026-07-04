@@ -195,8 +195,8 @@ export const mockAdminOrders: AdminOrder[] = [
     date: '2026-06-25T10:30:00Z',
     status: 'preparing',
     items: [
-      { id: 'item_1', name: 'Signature Latte', nameAr: 'لاتيه مميز', nameFr: 'Latte Signature', price: 45, quantity: 2, image: '/images/latte.jpg', category: 'COFFEE' },
-      { id: 'item_2', name: 'Truffle Risotto', nameAr: 'ريزوتو ترافل', nameFr: 'Risotto aux Truffes', price: 120, quantity: 1, image: '/images/risotto.jpg', category: 'FOOD' },
+      { id: 'item_1', name: 'Signature Latte', nameAr: 'لاتيه مميز', nameFr: 'Latte Signature', price: 45, quantity: 2, image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop', category: 'COFFEE' },
+      { id: 'item_2', name: 'Truffle Risotto', nameAr: 'ريزوتو ترافل', nameFr: 'Risotto aux Truffes', price: 120, quantity: 1, image: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&h=400&fit=crop', category: 'FOOD' },
     ],
     total: 210,
     priority: 'high',
@@ -210,8 +210,8 @@ export const mockAdminOrders: AdminOrder[] = [
     date: '2026-06-25T11:15:00Z',
     status: 'pending',
     items: [
-      { id: 'item_3', name: 'Wagyu Burger', nameAr: 'برجر واغيو', nameFr: 'Burger Wagyu', price: 95, quantity: 1, image: '/images/burger.jpg', category: 'FOOD' },
-      { id: 'item_4', name: 'Matcha Latte', nameAr: 'لاتيه ماتشا', nameFr: 'Latte Matcha', price: 38, quantity: 2, image: '/images/matcha.jpg', category: 'BEVERAGES' },
+      { id: 'item_3', name: 'Wagyu Burger', nameAr: 'برجر واغيو', nameFr: 'Burger Wagyu', price: 95, quantity: 1, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop', category: 'FOOD' },
+      { id: 'item_4', name: 'Matcha Latte', nameAr: 'لاتيه ماتشا', nameFr: 'Latte Matcha', price: 38, quantity: 2, image: 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&h=400&fit=crop', category: 'BEVERAGES' },
     ],
     total: 171,
     priority: 'normal',
@@ -225,7 +225,7 @@ export const mockAdminOrders: AdminOrder[] = [
     date: '2026-06-25T09:45:00Z',
     status: 'delivered',
     items: [
-      { id: 'item_5', name: 'Espresso Tiramisu', nameAr: 'تiramisu إسبريسو', nameFr: 'Tiramisu Expresso', price: 55, quantity: 2, image: '/images/tiramisu.jpg', category: 'DESSERTS' },
+      { id: 'item_5', name: 'Espresso Tiramisu', nameAr: 'تiramisu إسبريسو', nameFr: 'Tiramisu Expresso', price: 55, quantity: 2, image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&h=400&fit=crop', category: 'DESSERTS' },
     ],
     total: 110,
     priority: 'normal',
@@ -239,8 +239,8 @@ export const mockAdminOrders: AdminOrder[] = [
     date: '2026-06-25T12:00:00Z',
     status: 'ready',
     items: [
-      { id: 'item_6', name: 'Avocado Toast', nameAr: 'توست أفوكادو', nameFr: 'Toast Avocat', price: 42, quantity: 1, image: '/images/avocado.jpg', category: 'FOOD' },
-      { id: 'item_7', name: 'Cold Brew', nameAr: 'كولد برو', nameFr: 'Cold Brew', price: 28, quantity: 1, image: '/images/coldbrew.jpg', category: 'COFFEE' },
+      { id: 'item_6', name: 'Avocado Toast', nameAr: 'توست أفوكادو', nameFr: 'Toast Avocat', price: 42, quantity: 1, image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&h=400&fit=crop', category: 'FOOD' },
+      { id: 'item_7', name: 'Cold Brew', nameAr: 'كولد برو', nameFr: 'Cold Brew', price: 28, quantity: 1, image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop', category: 'COFFEE' },
     ],
     total: 70,
     priority: 'urgent',
@@ -254,7 +254,7 @@ export const mockAdminOrders: AdminOrder[] = [
     date: '2026-06-24T18:30:00Z',
     status: 'cancelled',
     items: [
-      { id: 'item_8', name: 'Salmon Poke Bowl', nameAr: 'بول سلمون', nameFr: 'Bol Saumon Poke', price: 78, quantity: 1, image: '/images/poke.jpg', category: 'FOOD' },
+      { id: 'item_8', name: 'Salmon Poke Bowl', nameAr: 'بول سلمون', nameFr: 'Bol Saumon Poke', price: 78, quantity: 1, image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop', category: 'FOOD' },
     ],
     total: 78,
     priority: 'low',
@@ -268,8 +268,8 @@ export const mockAdminOrders: AdminOrder[] = [
     date: '2026-06-25T13:20:00Z',
     status: 'pending',
     items: [
-      { id: 'item_9', name: 'Saffron Cappuccino', nameAr: 'كابتشينو زعفران', nameFr: 'Cappuccino Safran', price: 48, quantity: 3, image: '/images/cappuccino.jpg', category: 'COFFEE' },
-      { id: 'item_10', name: 'Pistachio Croissant', nameAr: 'كرواسون فستق', nameFr: 'Croissant Pistache', price: 32, quantity: 2, image: '/images/croissant.jpg', category: 'DESSERTS' },
+      { id: 'item_9', name: 'Saffron Cappuccino', nameAr: 'كابتشينو زعفران', nameFr: 'Cappuccino Safran', price: 48, quantity: 3, image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop', category: 'COFFEE' },
+      { id: 'item_10', name: 'Pistachio Croissant', nameAr: 'كرواسون فستق', nameFr: 'Croissant Pistache', price: 32, quantity: 2, image: 'https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=600&h=400&fit=crop', category: 'DESSERTS' },
     ],
     total: 208,
     priority: 'normal',
@@ -283,7 +283,7 @@ export const mockAdminOrders: AdminOrder[] = [
     date: '2026-06-25T14:05:00Z',
     status: 'preparing',
     items: [
-      { id: 'item_11', name: 'Lobster Pasta', nameAr: 'باستا لوبستر', nameFr: 'Pasta Homard', price: 185, quantity: 1, image: '/images/lobster.jpg', category: 'FOOD' },
+      { id: 'item_11', name: 'Lobster Pasta', nameAr: 'باستا لوبستر', nameFr: 'Pasta Homard', price: 185, quantity: 1, image: 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&h=400&fit=crop', category: 'FOOD' },
     ],
     total: 185,
     priority: 'high',
@@ -292,18 +292,18 @@ export const mockAdminOrders: AdminOrder[] = [
 ];
 
 export const mockAdminMenuItems: AdminMenuItem[] = [
-  { id: 'mi_1', name: 'Signature Latte', nameAr: 'لاتيه مميز', nameFr: 'Latte Signature', description: 'Our signature latte with a unique blend', descriptionAr: 'لاتيه مميز بمزيج فريد', descriptionFr: 'Notre latte signature avec un mélange unique', price: 45, image: '/images/latte.jpg', video: '', category: 'COFFEE', isAvailable: true, tags: ['bestseller', 'signature'], orderCount: 342, createdAt: '2026-01-15T00:00:00Z' },
-  { id: 'mi_2', name: 'Truffle Risotto', nameAr: 'ريزوتو ترافل', nameFr: 'Risotto aux Truffes', description: 'Creamy risotto with black truffle shavings', descriptionAr: 'ريزوتو كريمي مع شرائح الترافل الأسود', descriptionFr: 'Risotto crémeux aux éclats de truffe noire', price: 120, image: '/images/risotto.jpg', video: '', category: 'FOOD', isAvailable: true, tags: ['bestseller'], orderCount: 218, createdAt: '2026-01-20T00:00:00Z' },
-  { id: 'mi_3', name: 'Wagyu Burger', nameAr: 'برجر واغيو', nameFr: 'Burger Wagyu', description: 'Premium wagyu beef with artisan bun', descriptionAr: 'لحم واغيو فاخر مع خبز صناعي', descriptionFr: 'Bœuf wagyu premium avec bun artisanal', price: 95, image: '/images/burger.jpg', video: '', category: 'FOOD', isAvailable: true, tags: ['bestseller'], orderCount: 189, createdAt: '2026-02-01T00:00:00Z' },
-  { id: 'mi_4', name: 'Matcha Latte', nameAr: 'لاتيه ماتشا', nameFr: 'Latte Matcha', description: 'Premium Japanese matcha with oat milk', descriptionAr: 'ماتشا يابانية فاخرة مع حليب الشوفان', descriptionFr: 'Matcha japonaise premium avec lait d\'avoine', price: 38, image: '/images/matcha.jpg', video: '', category: 'BEVERAGES', isAvailable: true, tags: ['vegan', 'new'], orderCount: 156, createdAt: '2026-03-10T00:00:00Z' },
-  { id: 'mi_5', name: 'Espresso Tiramisu', nameAr: 'تiramisu إسبريسو', nameFr: 'Tiramisu Expresso', description: 'Classic tiramisu with our house espresso', descriptionAr: 'تiramisu كلاسيكي بإسبريسو المنزل', descriptionFr: 'Tiramisu classique avec notre expresso maison', price: 55, image: '/images/tiramisu.jpg', video: '', category: 'DESSERTS', isAvailable: true, tags: ['bestseller'], orderCount: 267, createdAt: '2026-01-25T00:00:00Z' },
-  { id: 'mi_6', name: 'Avocado Toast', nameAr: 'توست أفوكادو', nameFr: 'Toast Avocat', description: 'Sourdough toast with fresh avocado and poached egg', descriptionAr: 'توست صاجع مع أفوكادو طازج وبيض مسلوق', descriptionFr: 'Toast au levain avec avocat frais et œuf poché', price: 42, image: '/images/avocado.jpg', video: '', category: 'FOOD', isAvailable: true, tags: ['vegan', 'new'], orderCount: 134, createdAt: '2026-04-05T00:00:00Z' },
-  { id: 'mi_7', name: 'Cold Brew', nameAr: 'كولد برو', nameFr: 'Cold Brew', description: '24-hour cold brew with vanilla notes', descriptionAr: 'كولد برو 24 ساعة مع نكهات الفانيليا', descriptionFr: 'Cold brew 24 heures aux notes de vanille', price: 28, image: '/images/coldbrew.jpg', video: '', category: 'COFFEE', isAvailable: true, tags: ['bestseller'], orderCount: 298, createdAt: '2026-02-15T00:00:00Z' },
-  { id: 'mi_8', name: 'Saffron Cappuccino', nameAr: 'كابتشينو زعفران', nameFr: 'Cappuccino Safran', description: 'Traditional cappuccino infused with saffron', descriptionAr: 'كابتشينو تقليدي معزعفران', descriptionFr: 'Cappuccino traditionnel infusé au safran', price: 48, image: '/images/cappuccino.jpg', video: '', category: 'COFFEE', isAvailable: true, tags: ['signature', 'spicy'], orderCount: 187, createdAt: '2026-01-30T00:00:00Z' },
-  { id: 'mi_9', name: 'Salmon Poke Bowl', nameAr: 'بول سلمون', nameFr: 'Bol Saumon Poke', description: 'Fresh salmon with sushi rice and avocado', descriptionAr: 'سلمون طازج مع أرز السوشي والأفوكادو', descriptionFr: 'Saumon frais avec riz sushi et avocat', price: 78, image: '/images/poke.jpg', video: '', category: 'FOOD', isAvailable: true, tags: ['gluten-free'], orderCount: 145, createdAt: '2026-03-20T00:00:00Z' },
-  { id: 'mi_10', name: 'Pistachio Croissant', nameAr: 'كرواسون فستق', nameFr: 'Croissant Pistache', description: 'Buttery croissant filled with pistachio cream', descriptionAr: 'كرواسون بالزبدة محشو بكريم الفستق', descriptionFr: 'Croissant au beurre farci de crème de pistache', price: 32, image: '/images/croissant.jpg', video: '', category: 'DESSERTS', isAvailable: true, tags: ['new'], orderCount: 176, createdAt: '2026-05-01T00:00:00Z' },
-  { id: 'mi_11', name: 'Lobster Pasta', nameAr: 'باستا لوبستر', nameFr: 'Pasta Homard', description: 'Fresh pasta with butter-poached lobster', descriptionAr: 'باستا طازجة مع لوبستر بالزبدة', descriptionFr: 'Pâtes fraîches au homard poché au beurre', price: 185, image: '/images/lobster.jpg', video: '', category: 'FOOD', isAvailable: false, tags: ['signature'], orderCount: 98, createdAt: '2026-02-10T00:00:00Z' },
-  { id: 'mi_12', name: 'Chocolate Fondant', nameAr: 'شوكولاتة فوندان', nameFr: 'Fondant au Chocolat', description: 'Molten chocolate cake with vanilla ice cream', descriptionAr: 'كعكة شوكولاتة ذائبة مع آيس كريم الفانيليا', descriptionFr: 'Gâteau au chocolat fondant avec glace à la vanille', price: 65, image: '/images/fondant.jpg', video: '', category: 'DESSERTS', isAvailable: true, tags: ['bestseller'], orderCount: 223, createdAt: '2026-01-18T00:00:00Z' },
+  { id: 'mi_1', name: 'Signature Latte', nameAr: 'لاتيه مميز', nameFr: 'Latte Signature', description: 'Our signature latte with a unique blend', descriptionAr: 'لاتيه مميز بمزيج فريد', descriptionFr: 'Notre latte signature avec un mélange unique', price: 45, image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop', video: '', category: 'COFFEE', isAvailable: true, tags: ['bestseller', 'signature'], orderCount: 342, createdAt: '2026-01-15T00:00:00Z' },
+  { id: 'mi_2', name: 'Truffle Risotto', nameAr: 'ريزوتو ترافل', nameFr: 'Risotto aux Truffes', description: 'Creamy risotto with black truffle shavings', descriptionAr: 'ريزوتو كريمي مع شرائح الترافل الأسود', descriptionFr: 'Risotto crémeux aux éclats de truffe noire', price: 120, image: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&h=400&fit=crop', video: '', category: 'FOOD', isAvailable: true, tags: ['bestseller'], orderCount: 218, createdAt: '2026-01-20T00:00:00Z' },
+  { id: 'mi_3', name: 'Wagyu Burger', nameAr: 'برجر واغيو', nameFr: 'Burger Wagyu', description: 'Premium wagyu beef with artisan bun', descriptionAr: 'لحم واغيو فاخر مع خبز صناعي', descriptionFr: 'Bœuf wagyu premium avec bun artisanal', price: 95, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop', video: '', category: 'FOOD', isAvailable: true, tags: ['bestseller'], orderCount: 189, createdAt: '2026-02-01T00:00:00Z' },
+  { id: 'mi_4', name: 'Matcha Latte', nameAr: 'لاتيه ماتشا', nameFr: 'Latte Matcha', description: 'Premium Japanese matcha with oat milk', descriptionAr: 'ماتشا يابانية فاخرة مع حليب الشوفان', descriptionFr: 'Matcha japonaise premium avec lait d\'avoine', price: 38, image: 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&h=400&fit=crop', video: '', category: 'BEVERAGES', isAvailable: true, tags: ['vegan', 'new'], orderCount: 156, createdAt: '2026-03-10T00:00:00Z' },
+  { id: 'mi_5', name: 'Espresso Tiramisu', nameAr: 'تiramisu إسبريسو', nameFr: 'Tiramisu Expresso', description: 'Classic tiramisu with our house espresso', descriptionAr: 'تiramisu كلاسيكي بإسبريسو المنزل', descriptionFr: 'Tiramisu classique avec notre expresso maison', price: 55, image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&h=400&fit=crop', video: '', category: 'DESSERTS', isAvailable: true, tags: ['bestseller'], orderCount: 267, createdAt: '2026-01-25T00:00:00Z' },
+  { id: 'mi_6', name: 'Avocado Toast', nameAr: 'توست أفوكادو', nameFr: 'Toast Avocat', description: 'Sourdough toast with fresh avocado and poached egg', descriptionAr: 'توست صاجع مع أفوكادو طازج وبيض مسلوق', descriptionFr: 'Toast au levain avec avocat frais et œuf poché', price: 42, image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&h=400&fit=crop', video: '', category: 'FOOD', isAvailable: true, tags: ['vegan', 'new'], orderCount: 134, createdAt: '2026-04-05T00:00:00Z' },
+  { id: 'mi_7', name: 'Cold Brew', nameAr: 'كولد برو', nameFr: 'Cold Brew', description: '24-hour cold brew with vanilla notes', descriptionAr: 'كولد برو 24 ساعة مع نكهات الفانيليا', descriptionFr: 'Cold brew 24 heures aux notes de vanille', price: 28, image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop', video: '', category: 'COFFEE', isAvailable: true, tags: ['bestseller'], orderCount: 298, createdAt: '2026-02-15T00:00:00Z' },
+  { id: 'mi_8', name: 'Saffron Cappuccino', nameAr: 'كابتشينو زعفران', nameFr: 'Cappuccino Safran', description: 'Traditional cappuccino infused with saffron', descriptionAr: 'كابتشينو تقليدي معزعفران', descriptionFr: 'Cappuccino traditionnel infusé au safran', price: 48, image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop', video: '', category: 'COFFEE', isAvailable: true, tags: ['signature', 'spicy'], orderCount: 187, createdAt: '2026-01-30T00:00:00Z' },
+  { id: 'mi_9', name: 'Salmon Poke Bowl', nameAr: 'بول سلمون', nameFr: 'Bol Saumon Poke', description: 'Fresh salmon with sushi rice and avocado', descriptionAr: 'سلمون طازج مع أرز السوشي والأفوكادو', descriptionFr: 'Saumon frais avec riz sushi et avocat', price: 78, image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop', video: '', category: 'FOOD', isAvailable: true, tags: ['gluten-free'], orderCount: 145, createdAt: '2026-03-20T00:00:00Z' },
+  { id: 'mi_10', name: 'Pistachio Croissant', nameAr: 'كرواسون فستق', nameFr: 'Croissant Pistache', description: 'Buttery croissant filled with pistachio cream', descriptionAr: 'كرواسون بالزبدة محشو بكريم الفستق', descriptionFr: 'Croissant au beurre farci de crème de pistache', price: 32, image: 'https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=600&h=400&fit=crop', video: '', category: 'DESSERTS', isAvailable: true, tags: ['new'], orderCount: 176, createdAt: '2026-05-01T00:00:00Z' },
+  { id: 'mi_11', name: 'Lobster Pasta', nameAr: 'باستا لوبستر', nameFr: 'Pasta Homard', description: 'Fresh pasta with butter-poached lobster', descriptionAr: 'باستا طازجة مع لوبستر بالزبدة', descriptionFr: 'Pâtes fraîches au homard poché au beurre', price: 185, image: 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&h=400&fit=crop', video: '', category: 'FOOD', isAvailable: false, tags: ['signature'], orderCount: 98, createdAt: '2026-02-10T00:00:00Z' },
+  { id: 'mi_12', name: 'Chocolate Fondant', nameAr: 'شوكولاتة فوندان', nameFr: 'Fondant au Chocolat', description: 'Molten chocolate cake with vanilla ice cream', descriptionAr: 'كعكة شوكولاتة ذائبة مع آيس كريم الفانيليا', descriptionFr: 'Gâteau au chocolat fondant avec glace à la vanille', price: 65, image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=400&fit=crop', video: '', category: 'DESSERTS', isAvailable: true, tags: ['bestseller'], orderCount: 223, createdAt: '2026-01-18T00:00:00Z' },
 ];
 
 export const mockAdminUsers: AdminUser[] = [
@@ -327,18 +327,18 @@ export const mockAdminReservations: AdminReservation[] = [
 ];
 
 export const mockAdminNews: AdminNewsPost[] = [
-  { id: 'news_1', title: 'Summer Special Menu', titleAr: 'قائمة الصيف الخاصة', content: 'Experience our new summer collection featuring refreshing cold brews and tropical desserts.', contentAr: 'استمتع بمجموعتنا الصيفية الجديدة', image: '/images/summer.jpg', startDate: '2026-06-01', endDate: '2026-08-31', isActive: true, showOnHomepage: true, status: 'active', createdAt: '2026-05-25T00:00:00Z' },
-  { id: 'news_2', title: 'VIP Loyalty Program Launch', titleAr: 'إطلاق برنامج الولاء المميز', content: 'Join our exclusive loyalty program and earn points with every order.', contentAr: 'انضم لبرنامج الولاء الحصري واكسب نقاطاً مع كل طلب', image: '/images/loyalty.jpg', startDate: '2026-06-15', endDate: '2026-12-31', isActive: true, showOnHomepage: true, status: 'active', createdAt: '2026-06-10T00:00:00Z' },
-  { id: 'news_3', title: 'Private Dining Experience', titleAr: 'تجربة الطعام الخاصة', content: 'Book our private dining room for special occasions.', contentAr: 'احجز غرفة الطعام الخاصة للمناسبات الخاصة', image: '/images/private-dining.jpg', startDate: '2026-07-01', endDate: '2026-07-31', isActive: false, showOnHomepage: false, status: 'scheduled', createdAt: '2026-06-20T00:00:00Z' },
+  { id: 'news_1', title: 'Summer Special Menu', titleAr: 'قائمة الصيف الخاصة', content: 'Experience our new summer collection featuring refreshing cold brews and tropical desserts.', contentAr: 'استمتع بمجموعتنا الصيفية الجديدة', image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop', startDate: '2026-06-01', endDate: '2026-08-31', isActive: true, showOnHomepage: true, status: 'active', createdAt: '2026-05-25T00:00:00Z' },
+  { id: 'news_2', title: 'VIP Loyalty Program Launch', titleAr: 'إطلاق برنامج الولاء المميز', content: 'Join our exclusive loyalty program and earn points with every order.', contentAr: 'انضم لبرنامج الولاء الحصري واكسب نقاطاً مع كل طلب', image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop', startDate: '2026-06-15', endDate: '2026-12-31', isActive: true, showOnHomepage: true, status: 'active', createdAt: '2026-06-10T00:00:00Z' },
+  { id: 'news_3', title: 'Private Dining Experience', titleAr: 'تجربة الطعام الخاصة', content: 'Book our private dining room for special occasions.', contentAr: 'احجز غرفة الطعام الخاصة للمناسبات الخاصة', image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop', startDate: '2026-07-01', endDate: '2026-07-31', isActive: false, showOnHomepage: false, status: 'scheduled', createdAt: '2026-06-20T00:00:00Z' },
 ];
 
 export const mockAdminMedia: AdminMediaItem[] = [
-  { id: 'media_1', name: 'latte.jpg', url: '/images/latte.jpg', type: 'image', size: 245000, category: 'menu', createdAt: '2026-01-15T00:00:00Z' },
-  { id: 'media_2', name: 'risotto.jpg', url: '/images/risotto.jpg', type: 'image', size: 312000, category: 'menu', createdAt: '2026-01-20T00:00:00Z' },
-  { id: 'media_3', name: 'summer.jpg', url: '/images/summer.jpg', type: 'image', size: 520000, category: 'promotion', createdAt: '2026-05-25T00:00:00Z' },
+  { id: 'media_1', name: 'latte.jpg', url: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop', type: 'image', size: 245000, category: 'menu', createdAt: '2026-01-15T00:00:00Z' },
+  { id: 'media_2', name: 'risotto.jpg', url: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&h=400&fit=crop', type: 'image', size: 312000, category: 'menu', createdAt: '2026-01-20T00:00:00Z' },
+  { id: 'media_3', name: 'summer.jpg', url: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop', type: 'image', size: 520000, category: 'promotion', createdAt: '2026-05-25T00:00:00Z' },
   { id: 'media_4', name: 'hero.mp4', url: '/videos/hero.mp4', type: 'video', size: 2400000, category: 'homepage', createdAt: '2026-01-01T00:00:00Z' },
-  { id: 'media_5', name: 'loyalty.jpg', url: '/images/loyalty.jpg', type: 'image', size: 180000, category: 'promotion', createdAt: '2026-06-10T00:00:00Z' },
-  { id: 'media_6', name: 'private-dining.jpg', url: '/images/private-dining.jpg', type: 'image', size: 445000, category: 'homepage', createdAt: '2026-06-20T00:00:00Z' },
+  { id: 'media_5', name: 'loyalty.jpg', url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop', type: 'image', size: 180000, category: 'promotion', createdAt: '2026-06-10T00:00:00Z' },
+  { id: 'media_6', name: 'private-dining.jpg', url: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop', type: 'image', size: 445000, category: 'homepage', createdAt: '2026-06-20T00:00:00Z' },
 ];
 
 export const mockDashboardStats: AdminDashboardStats = {
@@ -363,11 +363,11 @@ export const mockChartData: AdminChartData[] = [
 ];
 
 export const mockTopProducts: AdminTopProduct[] = [
-  { id: 'mi_1', name: 'Signature Latte', nameAr: 'لاتيه مميز', image: '/images/latte.jpg', orderCount: 342, revenue: 15390 },
-  { id: 'mi_7', name: 'Cold Brew', nameAr: 'كولد برو', image: '/images/coldbrew.jpg', orderCount: 298, revenue: 8344 },
-  { id: 'mi_5', name: 'Espresso Tiramisu', nameAr: 'تiramisu إسبريسو', image: '/images/tiramisu.jpg', orderCount: 267, revenue: 14685 },
-  { id: 'mi_12', name: 'Chocolate Fondant', nameAr: 'شوكولاتة فوندان', image: '/images/fondant.jpg', orderCount: 223, revenue: 14495 },
-  { id: 'mi_2', name: 'Truffle Risotto', nameAr: 'ريزوتو ترافل', image: '/images/risotto.jpg', orderCount: 218, revenue: 26160 },
+  { id: 'mi_1', name: 'Signature Latte', nameAr: 'لاتيه مميز', image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop', orderCount: 342, revenue: 15390 },
+  { id: 'mi_7', name: 'Cold Brew', nameAr: 'كولد برو', image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop', orderCount: 298, revenue: 8344 },
+  { id: 'mi_5', name: 'Espresso Tiramisu', nameAr: 'تiramisu إسبريسو', image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&h=400&fit=crop', orderCount: 267, revenue: 14685 },
+  { id: 'mi_12', name: 'Chocolate Fondant', nameAr: 'شوكولاتة فوندان', image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=400&fit=crop', orderCount: 223, revenue: 14495 },
+  { id: 'mi_2', name: 'Truffle Risotto', nameAr: 'ريزوتو ترافل', image: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&h=400&fit=crop', orderCount: 218, revenue: 26160 },
 ];
 
 export const mockActivityFeed: AdminActivity[] = [
@@ -382,7 +382,7 @@ export const mockActivityFeed: AdminActivity[] = [
 export const mockAdminSettings: AdminSettings = {
   restaurantName: 'ORIGIN',
   restaurantNameAr: 'أوريجين',
-  logo: '/images/logo.png',
+  logo: '/logo.png',
   primaryColor: '#C8882A',
   secondaryColor: '#1C0A00',
   openingHours: [

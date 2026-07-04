@@ -41,7 +41,7 @@ export function MediaTab() {
       addMedia({
         id: `media_${Date.now()}`,
         name: `upload-${Date.now()}.jpg`,
-        url: '/images/uploaded.jpg',
+        url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop',
         type: 'image',
         size: Math.floor(Math.random() * 500000) + 100000,
         category: 'menu',

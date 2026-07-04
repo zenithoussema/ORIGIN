@@ -70,6 +70,17 @@ export function QuickViewModal({ item, onClose }: QuickViewModalProps) {
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent) {
+                      const fallback = document.createElement('div');
+                      fallback.className = 'absolute inset-0 flex items-center justify-center bg-espresso/10 dark:bg-cream/10';
+                      fallback.innerHTML = '<span class="text-4xl">☕</span>';
+                      parent.appendChild(fallback);
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent sm:bg-gradient-to-r" />
                 <button

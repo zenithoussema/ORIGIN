@@ -1,33 +1,23 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-import { useEffect } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
+import { OfflineBanner } from '@/components/pwa/OfflineBanner';
+import { UpdateNotification } from '@/components/pwa/UpdateNotification';
+import { InstallBanner } from '@/components/pwa/InstallBanner';
 
-function NullComponent() {
-  return null;
-}
+export function PwaProvider({ children }: { children: ReactNode }) {
+  const [mounted, setMounted] = useState(false);
 
-const InstallBanner = dynamic(
-  () => import('@/components/pwa/InstallBanner').then((m) => m.default).catch(() => NullComponent),
-  { ssr: false }
-);
-
-const UpdateNotification = dynamic(
-  () => import('@/components/pwa/UpdateNotification').then((m) => m.default).catch(() => NullComponent),
-  { ssr: false }
-);
-
-const OfflineBanner = dynamic(
-  () => import('@/components/pwa/OfflineBanner').then((m) => m.default).catch(() => NullComponent),
-  { ssr: false }
-);
-
-export function PwaProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
+    setMounted(true);
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js').catch(() => {});
     }
   }, []);
+
+  if (!mounted) {
+    return <>{children}</>;
+  }
 
   return (
     <>

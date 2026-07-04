@@ -50,6 +50,17 @@ export const CartItem = memo(function CartItem({ item, isHighlighted }: CartItem
           height={64}
           sizes="64px"
           className="object-cover"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.style.display = 'none';
+            const parent = target.parentElement;
+            if (parent) {
+              const fallback = document.createElement('div');
+              fallback.className = 'absolute inset-0 flex items-center justify-center text-2xl';
+              fallback.innerHTML = '☕';
+              parent.appendChild(fallback);
+            }
+          }}
         />
       </div>
 

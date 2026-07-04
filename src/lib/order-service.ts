@@ -84,7 +84,7 @@ export async function createOrder(
       nameFr: menuItem.name,
       price: menuItem.price,
       quantity: cartItem.quantity,
-      image: menuItem.image ?? '/images/placeholder.jpg',
+      image: menuItem.image ?? 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop',
       category: menuItem.category,
     });
   }

@@ -25,6 +25,7 @@ const tagConfig: Record<string, { label: string; labelAr: string; className: str
 export function MenuItemCard({ item, onQuickView }: MenuItemCardProps) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const { locale, t } = useLanguage();
   const addItem = useCartStore((s) => s.addItem);
 
@@ -61,6 +62,11 @@ export function MenuItemCard({ item, onQuickView }: MenuItemCardProps) {
         {!imageLoaded && (
           <div className="absolute inset-0 bg-espresso/10 dark:bg-cream/10 animate-pulse" />
         )}
+        {imageError && (
+          <div className="absolute inset-0 flex items-center justify-center bg-espresso/10 dark:bg-cream/10">
+            <span className="text-4xl">☕</span>
+          </div>
+        )}
         <Image
           src={item.image}
           alt={name}
@@ -70,6 +76,10 @@ export function MenuItemCard({ item, onQuickView }: MenuItemCardProps) {
             imageLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           onLoadingComplete={() => setImageLoaded(true)}
+          onError={() => {
+            setImageError(true);
+            setImageLoaded(true);
+          }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
