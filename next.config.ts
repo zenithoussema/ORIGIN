@@ -15,7 +15,7 @@ const securityHeaders = [
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: blob: https://res.cloudinary.com https://images.unsplash.com",
       "media-src 'self'",
-      "connect-src 'self' https://api.cloudinary.com https://*.sentry.io",
+      "connect-src 'self' https://api.cloudinary.com https://res.cloudinary.com https://images.unsplash.com https://*.sentry.io",
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",
